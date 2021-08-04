@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "The prepareTransition plugin sets display and visibility to override any existing display and visibility properties.",
   "header": "Jonathan Snook - MIT License - https://github.com/snookca/prepareTransition",
-  "main": "gulpfile.js",
+  "main": "preparetransition.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

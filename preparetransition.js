@@ -16,7 +16,17 @@
  *  http://www.opensource.org/licenses/mit-license.php
  */
 
-(function($){
+ ;(function(factory) {
+    'use strict';
+    if (typeof define === 'function' && define.amd) {
+        define(['jquery'], factory);
+    } else if (typeof exports !== 'undefined') {
+        module.exports = factory(require('jquery'));
+    } else {
+        factory(jQuery);
+    }
+
+}(function($){
 
 $.fn.prepareTransition = function(){
     return this.each(function(){
@@ -42,5 +52,5 @@ $.fn.prepareTransition = function(){
 };
 
 
-}(jQuery));
+}(jQuery)));
 

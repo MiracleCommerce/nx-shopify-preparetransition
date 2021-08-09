@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title></title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="preparetransition.js"></script>
+    <script src="./test.js"></script>
 
     <style>
 
@@ -41,11 +41,5 @@
     <button id="btn-test">Toggle message</button>
     <div id="msg1" class="msg">Here is a message that needs to be displayed 1</div>
     <div id="msg2" class="msg hidden">Here is a message that needs to be displayed 2</div>
-
-    <script>
-    $('#btn-test').bind('click', function(){
-        $('.msg').prepareTransition().toggleClass('hidden');
-    });
-    </script>
 </body>
 </html>
